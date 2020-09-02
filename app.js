@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect(process.env.CONNECTION), {
+mongoose.connect(process.env.CONNECTION, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
